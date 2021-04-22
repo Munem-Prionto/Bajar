@@ -232,7 +232,7 @@ input[type=number]{
 /* button */
 .btn {
     border: none;
-    color: white;
+    color: #ffffff;
     padding: .3rem 1rem;
     text-align: center;
     text-decoration: none;
@@ -242,13 +242,9 @@ input[type=number]{
     font-size: 1rem;
     transition-duration: 0.4s;
     cursor: pointer;
-    background-color: var(--primary-color);
+    background-color: #000000;
     border: 2px solid #000000;
 }    
-.btn:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
 .d-none {display: none;}
 .z-0 {z-index: -1;}
 
