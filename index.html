@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="BAJAR,LIST,Bajar,List,bajar,list,shopping,groceries">
+    <meta name="description" content="Tired of making List for groceries? Use this website to solve your problem">
+
+    <title>Baজার</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/43dcc20e7a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Baজার</h1>
+        </header>
+        <!-- Theme Switch -->
+        <div class="themeSwitch">
+            <input type="checkbox" id="switch"/>
+            <label id="switchLabel"for="switch">Toggle</label>
+        </div>
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Search.." id="search">
+      
+            <button class="search-button">
+              <i class="fas fa-search"></i>
+            </button>
+         </div>
+         <!-- Sort By -->
+         <div id="radio">
+            <div for="" class="radio_title">Sort By</div>
+
+            <span class="radio_options">
+                <input type="radio" name="sortBy" id="radio-a" class="radio_input" checked>
+                <label for="radio-a" class="radio_label">A-Z</label>
+            </span>
+    
+            <span class="radio_options">
+                <input type="radio" name="sortBy" id="radio-p" class="radio_input">
+                <label for="radio-p" class="radio_label">Price</label>
+            </span>    
+         </div>
+        <!-- Main Content -->
+        <div class="main"></div>
+         <!-- Confirm -->
+        <button id="confirmBtn" class="btn">Confirm</button>
+        <div class="confirmDiv d-none">
+            <div class="confirmList"></div>
+        </div>
+        <!-- Total Price -->
+        <h3 class="totalPrice"></h3>
+        <!-- Edit Btn -->
+        <button id="editBtn" class="btn d-none editBtn">Edit</button>
+        
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <span>Made by <a target="_blank" href="http://munemprionto.netlify.app">Munem Prionto</a></span>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
