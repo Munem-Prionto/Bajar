@@ -254,6 +254,9 @@ footer {
   text-align: center;
   font-size: .9rem;
 }
+footer a {
+  color: var(--primary-color);
+}
 /*==============================================================================================*/
 @media only screen and (max-width: 960px) {
     :root {
